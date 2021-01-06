@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 plt.grid(False)
 plt.gray()
 plt.axis('off')
-# plt.imshow(i)
-# plt.show()
+plt.imshow(i)
+plt.show()
 
 #Convolution
 
@@ -18,7 +18,7 @@ size_x = i_transformed.shape[0] #Gets the x dimensions
 size_y = i_transformed.shape[1] #Gets the y dimensions
 
 # Create filters & weights - filter has to be 0 or 1 & if its not weight has to bring it down to 0 / 1
-filter = [[-1, -2, -1], [0, 0, 0], [1, 2, 1]] # strong vertical lines
+# filter = [[-1, -2, -1], [0, 0, 0], [1, 2, 1]] # strong vertical lines
 filter = [[-1, 0, 1], [-2, 0, 2], [-1, 0, 1]] # strong horizontal lines
 weight = 1  # filters add up to 0 so weight is 1
 
@@ -41,7 +41,7 @@ for x in range(1, size_x-1):
         if(output_pixel>255):
             output_pixel = 255
         i_transformed[x, y]  = output_pixel
-plt.imshow(i_transformed)
+# plt.imshow(i_transformed)
 # plt.show()
 
 
