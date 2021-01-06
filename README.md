@@ -10,15 +10,21 @@ Test Data: 83% ; Training Data: 87%
 ## Convolutions And Pooling
 
 * Created a feature map of an image from the from misc in SciPy.
-    ![Actual image](./assets/proj3ActualImage.png)
+
+     <img src="./assets/proj3ActualImage.png" width="256" height="256">
+
 * The first filter gives emphasis to the vertical lines of the picture.
-    ![Sharpen Vertical lines](./assets/proj3SharpenVerticalLines.png)
+
+     <img src="./assets/proj3SharpenVerticalLines.png" width="256" height="256">
+
 
 * The second filter provides emphasis to the horizontal lines of the picture.
-    ![Sharpen Horizontal lines](./assets/proj3SharpenHorizontalLines.png)
+
+     <img src="./assets/proj3SharpenHorizontalLines.png" width="256" height="256">
 
 * Pooling is done using Maximum Pooling. Information from the picture is reduced (in terms of pixels) while maintaining the features that are detected.
-    ![Max Pooling](./assets/proj3PoolingHorizontal.png)
+
+     <img src="./assets/proj3PoolingHorizontal.png" width="256" height="256">
 
 
 ## Enhance Computer Vision Using Convolutions
